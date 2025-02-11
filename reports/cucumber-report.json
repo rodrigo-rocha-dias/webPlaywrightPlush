@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 803895999
+              "duration": 4991140600
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1731587300
+              "duration": 2269202899
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 780797499
+              "duration": 1397353699
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1716259399
+              "duration": 2619477000
             }
           },
           {
@@ -120,7 +120,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 425378600
+              "duration": 606196100
             }
           }
         ],
@@ -150,7 +150,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1395822700
+              "duration": 1393702000
             }
           },
           {
@@ -163,7 +163,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1302784599
+              "duration": 1206890300
             }
           },
           {
@@ -176,7 +176,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 70992500
+              "duration": 53474199
             }
           },
           {
@@ -184,7 +184,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 395008200
+              "duration": 567204600
             }
           }
         ],
@@ -214,7 +214,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 966101300
+              "duration": 1576952699
             }
           },
           {
@@ -227,7 +227,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 727993899
+              "duration": 1494433100
             }
           },
           {
@@ -240,7 +240,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 472364300
+              "duration": 689791900
             }
           },
           {
@@ -253,7 +253,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8110099
+              "duration": 15827099
             }
           },
           {
@@ -261,7 +261,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 419660700
+              "duration": 550637999
             }
           }
         ],
@@ -280,7 +280,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 918453299
+              "duration": 1582005999
             }
           },
           {
@@ -293,7 +293,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 783709000
+              "duration": 943575499
             }
           },
           {
@@ -306,7 +306,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 476744399
+              "duration": 558785199
             }
           },
           {
@@ -319,7 +319,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 15015756000,
+              "duration": 15017226299,
               "error_message": "Error: function timed out, ensure the promise resolves within 15000 milliseconds\n    at Timeout.<anonymous> (C:\\projetos\\webPlaywrightPlush\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
             }
           },
@@ -361,7 +361,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 416372499
+              "duration": 736892499
             }
           }
         ],

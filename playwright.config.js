@@ -1,6 +1,8 @@
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
+  testDir: './features',
+  testMatch: ['**/*.feature'],
   use: {
     baseURL: 'https://demo.spreecommerce.org',
     headless: true,
