@@ -21,7 +21,7 @@ When('selecionar itens para colocar no carrinho', async function () {
   await this.SwagLabsPage.selecionarItens();
 })
 
-When('confirmar o item que foi adicionado no carrinho e clicar em Checkout', async function () {
+When('confirmar o item que foi adicionado ao carrinho e clicar em Checkout', async function () {
   this.SwagLabsPage = new SwagLabsPage(this.page);
   await this.SwagLabsPage.confirmarItemAdicionado();
 })

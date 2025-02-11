@@ -5,18 +5,26 @@ const fs = require('fs');
 setDefaultTimeout(15 * 1000);
 
 Before(async function () {
-  this.browser = await chromium.launch({ headless: false, slowMo: 100 });
+  this.browser = await chromium.launch({ headless: true });
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
 });
 
 After(async function (scenario) {
-  if (scenario.result.status === Status.FAILED) {
-    const dir = 'test-results';
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+  const scenarioName = scenario.pickle.name.replace(/[^a-zA-Z0-9-_]/g, '_');
+  const testResultsDir = 'test-results';
+  const reportDir = 'reports/screenshots';
 
-    await this.page.screenshot({ path: `test-results/${scenario.pickle.name}.png`, fullPage: true });
-    console.log(`Screenshot salvo em test-results/${scenario.pickle.name}.png`);
+  if (!fs.existsSync(testResultsDir)) fs.mkdirSync(testResultsDir, { recursive: true });
+  if (!fs.existsSync(reportDir)) fs.mkdirSync(reportDir, { recursive: true });
+
+  if (scenario.result.status === Status.FAILED) {
+    await this.page.screenshot({ path: `${testResultsDir}/${scenarioName}.png`, fullPage: true });
+    console.log(`Screenshot salvo em ${testResultsDir}/${scenarioName}.png`);
+  }
+
+  if (this.page) {
+    await this.page.screenshot({ path: `${reportDir}/${scenarioName}.png` });
   }
 
   await this.page.close();

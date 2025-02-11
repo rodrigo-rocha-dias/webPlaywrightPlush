@@ -9,6 +9,6 @@ Feature: Swag Labs - Acessar a página inicial
     Given que acesso a pagina inicial do swag labs
     And autenticar com o usuario "standard_user"
     And selecionar itens para colocar no carrinho
-    And confirmar o item que foi adicionado no carrinho e clicar em Checkout
+    And confirmar o item que foi adicionado ao carrinho e clicar em Checkout
     When preencher os campos de informacoes de cobranca
     Then sera feito compra com sucesso
