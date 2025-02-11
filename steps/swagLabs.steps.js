@@ -26,7 +26,7 @@ When('confirmar o item que foi adicionado ao carrinho e clicar em Checkout', asy
   await this.SwagLabsPage.confirmarItemAdicionado();
 })
 
-When('preencher os campos de informacoes de cobranca', async function () {
+When('preencher os campos de informacoes de cobranca swag labs', async function () {
   this.SwagLabsPage = new SwagLabsPage(this.page);
   await this.SwagLabsPage.preencherCamposInformacoesCobranca();
 })
