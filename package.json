@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx playwright test",
+    "cucumber": "npx cucumber-js",
+    "cucumber-report": "npx cucumber-js --format json:reports/cucumber-report.json",
+    "test:report": "npx playwright test --reporter=html",
+    "generate-report": "node generateReport.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +17,8 @@
     "@cucumber/cucumber": "^11.2.0",
     "@playwright/test": "^1.50.1",
     "chai": "^5.1.2"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^7.2.0"
   }
 }

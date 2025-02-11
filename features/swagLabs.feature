@@ -1,9 +1,9 @@
-Feature: Acessar a página inicial
+Feature: Swag Labs - Acessar a página inicial
 
-  # Scenario: Login com usuário padrão
-  #   Given que acesso a pagina inicial do swag labs
-  #   And autenticar com o usuario "standard_user"
-  #   Then deve carregar tela home "Spree Commerce DEMO Spree"
+  Scenario: Login com usuário padrão
+    Given que acesso a pagina inicial do swag labs
+    And autenticar com o usuario "standard_user"
+    Then deve carregar tela home "Spree Commerce DEMO Spree"
 
   Scenario: Checkout completo
     Given que acesso a pagina inicial do swag labs

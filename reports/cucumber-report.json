@@ -1,0 +1,379 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout;fazer-a-compra-de-1-produto",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fazer a compra de 1 produto",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 803895999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que acesso a pagina inicial da plush",
+            "match": {
+              "location": "steps\\home.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1731587300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "selecionar um produto",
+            "match": {
+              "location": "steps\\util.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 780797499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "selecionar a quantidade desejada e adicionar no carrinho",
+            "match": {
+              "location": "steps\\util.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1716259399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "confirmar o item que foi adicionado no carrinho e clicar em Checkout",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "preencher os campos de informacoes de cobranca",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "selecionar metodo de entrega",
+            "match": {
+              "location": "steps\\util.steps.js:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "preencher os campos de informacoes de pagamento",
+            "match": {
+              "location": "steps\\util.steps.js:30"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "sera feita compra exibindo mensagem de sucesso",
+            "match": {
+              "location": "steps\\util.steps.js:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 425378600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout",
+    "tags": [],
+    "uri": "features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "acessar-a-página-inicial;verificar-o-título-da-página",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verificar o título da página",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1395822700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que acesso a pagina inicial da plush",
+            "match": {
+              "location": "steps\\home.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1302784599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "o titulo da pagina deve ser \"Spree Commerce DEMO Spree\"",
+            "match": {
+              "location": "steps\\home.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70992500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 395008200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "acessar-a-página-inicial",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Acessar a página inicial",
+    "tags": [],
+    "uri": "features\\home.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "swag-labs---acessar-a-página-inicial;login-com-usuário-padrão",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login com usuário padrão",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 966101300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que acesso a pagina inicial do swag labs",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 727993899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "autenticar com o usuario \"standard_user\"",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 472364300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "deve carregar tela home \"Spree Commerce DEMO Spree\"",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8110099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 419660700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "swag-labs---acessar-a-página-inicial;checkout-completo",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Checkout completo",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 918453299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "que acesso a pagina inicial do swag labs",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 783709000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "autenticar com o usuario \"standard_user\"",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 476744399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "selecionar itens para colocar no carrinho",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 15015756000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 15000 milliseconds\n    at Timeout.<anonymous> (C:\\projetos\\webPlaywrightPlush\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "confirmar o item que foi adicionado no carrinho e clicar em Checkout",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "preencher os campos de informacoes de cobranca",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "sera feito compra com sucesso",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 416372499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "swag-labs---acessar-a-página-inicial",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Swag Labs - Acessar a página inicial",
+    "tags": [],
+    "uri": "features\\swagLabs.feature"
+  }
+]
