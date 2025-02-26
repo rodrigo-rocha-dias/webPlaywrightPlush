@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4991140600
+              "duration": 781458800
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2269202899
+              "duration": 2102358600
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 5,
             "name": "selecionar um produto",
             "match": {
-              "location": "steps\\util.steps.js:4"
+              "location": "steps\\util.steps.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1397353699
+              "duration": 822117999
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "selecionar a quantidade desejada e adicionar no carrinho",
             "match": {
-              "location": "steps\\util.steps.js:9"
+              "location": "steps\\util.steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 2619477000
+              "duration": 1284172200
             }
           },
           {
@@ -61,9 +61,12 @@
             "keyword": "And ",
             "line": 7,
             "name": "confirmar o item que foi adicionado no carrinho e clicar em Checkout",
+            "match": {
+              "location": "steps\\util.steps.js:19"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 2638697699
             }
           },
           {
@@ -71,9 +74,13 @@
             "keyword": "And ",
             "line": 8,
             "name": "preencher os campos de informacoes de cobranca",
+            "match": {
+              "location": "steps\\util.steps.js:24"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "failed",
+              "duration": 30028776299,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\projetos\\webPlaywrightPlush\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
             }
           },
           {
@@ -82,7 +89,7 @@
             "line": 9,
             "name": "selecionar metodo de entrega",
             "match": {
-              "location": "steps\\util.steps.js:25"
+              "location": "steps\\util.steps.js:29"
             },
             "result": {
               "status": "skipped",
@@ -95,7 +102,7 @@
             "line": 10,
             "name": "preencher os campos de informacoes de pagamento",
             "match": {
-              "location": "steps\\util.steps.js:30"
+              "location": "steps\\util.steps.js:34"
             },
             "result": {
               "status": "skipped",
@@ -108,7 +115,7 @@
             "line": 11,
             "name": "sera feita compra exibindo mensagem de sucesso",
             "match": {
-              "location": "steps\\util.steps.js:35"
+              "location": "steps\\util.steps.js:39"
             },
             "result": {
               "status": "skipped",
@@ -120,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 606196100
+              "duration": 629203799
             }
           }
         ],
@@ -150,7 +157,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1393702000
+              "duration": 631640499
             }
           },
           {
@@ -163,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1206890300
+              "duration": 1312753499
             }
           },
           {
@@ -176,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53474199
+              "duration": 53268799
             }
           },
           {
@@ -184,7 +191,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 567204600
+              "duration": 242522499
             }
           }
         ],
@@ -206,7 +213,7 @@
         "description": "",
         "id": "swag-labs---acessar-a-página-inicial;login-com-usuário-padrão",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 6,
         "name": "Login com usuário padrão",
         "steps": [
           {
@@ -214,7 +221,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1576952699
+              "duration": 685503799
             }
           },
           {
@@ -227,33 +234,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1494433100
+              "duration": 982032800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 5,
+            "line": 7,
             "name": "autenticar com o usuario \"standard_user\"",
             "match": {
               "location": "steps\\swagLabs.steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 689791900
+              "duration": 137703100
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
+            "line": 8,
             "name": "deve carregar tela home \"Spree Commerce DEMO Spree\"",
             "match": {
               "location": "steps\\swagLabs.steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 15827099
+              "duration": 9226199
             }
           },
           {
@@ -261,7 +268,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 550637999
+              "duration": 251797300
             }
           }
         ],
@@ -272,7 +279,7 @@
         "description": "",
         "id": "swag-labs---acessar-a-página-inicial;checkout-completo",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 10,
         "name": "Checkout completo",
         "steps": [
           {
@@ -280,73 +287,79 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1582005999
+              "duration": 668853000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
+            "line": 4,
             "name": "que acesso a pagina inicial do swag labs",
             "match": {
               "location": "steps\\swagLabs.steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 943575499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "autenticar com o usuario \"standard_user\"",
-            "match": {
-              "location": "steps\\swagLabs.steps.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 558785199
+              "duration": 540372699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "selecionar itens para colocar no carrinho",
+            "name": "autenticar com o usuario \"standard_user\"",
             "match": {
-              "location": "steps\\swagLabs.steps.js:19"
+              "location": "steps\\swagLabs.steps.js:10"
             },
             "result": {
-              "status": "failed",
-              "duration": 15017226299,
-              "error_message": "Error: function timed out, ensure the promise resolves within 15000 milliseconds\n    at Timeout.<anonymous> (C:\\projetos\\webPlaywrightPlush\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
+              "status": "passed",
+              "duration": 130900499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "confirmar o item que foi adicionado no carrinho e clicar em Checkout",
+            "name": "selecionar itens para colocar no carrinho",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:19"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "failed",
+              "duration": 30013762000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\projetos\\webPlaywrightPlush\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "confirmar o item que foi adicionado ao carrinho e clicar em Checkout",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:24"
+            },
+            "result": {
+              "status": "skipped",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
-            "name": "preencher os campos de informacoes de cobranca",
+            "line": 14,
+            "name": "preencher os campos de informacoes de cobranca swag labs",
+            "match": {
+              "location": "steps\\swagLabs.steps.js:29"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "skipped",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 15,
             "name": "sera feito compra com sucesso",
             "match": {
               "location": "steps\\swagLabs.steps.js:34"
@@ -361,7 +374,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 736892499
+              "duration": 439847900
             }
           }
         ],

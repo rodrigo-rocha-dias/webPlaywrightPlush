@@ -1,4 +1,4 @@
-const { expect } = require('@playwright/test');
+const { faker } = require('@faker-js/faker');
 
 class SwagLabsPage {
   constructor(page) {
@@ -31,9 +31,12 @@ class SwagLabsPage {
   }
 
   async preencherCamposInformacoesCobranca() {
-    await this.page.locator('[data-test="firstName"]').fill('Rodrigo');
-    await this.page.locator('[data-test="lastName"]').fill('Dias');
-    await this.page.locator('[data-test="postalCode"]').fill('09250300');
+    const firstName = faker.person.firstName();
+    const lastName = faker.person.lastName();
+    const postalCode = faker.location.zipCode();
+    await this.page.locator('[data-test="firstName"]').fill(firstName);
+    await this.page.locator('[data-test="lastName"]').fill(lastName);
+    await this.page.locator('[data-test="postalCode"]').fill(postalCode);
     await this.page.locator('[data-test="continue"]').click();
     await this.page.locator('[data-test="finish"]').click();
   }
